@@ -1,0 +1,3 @@
+[submodule "flash"]
+	path = flash
+	url = git@github.com:czbiohub/flash.git
