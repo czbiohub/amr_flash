@@ -3,7 +3,7 @@ amr_library:
 								  --padding ../inputs/full_guide_set/padding.yml
 	cd flash && $(MAKE) build_indices
 	cd flash && python optimizer.py --output ../library.txt \
-				      --include ../inputs/full_guide_set/all_ordered_guides.txt
+				      --include ../inputs/full_guide_set/all_ordered_guides.txt \
 				      --padding ../inputs/full_guide_set/padding.yml
 
 	cd flash && python extract_guides.py --library ../library.txt \
